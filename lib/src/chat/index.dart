@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
 class ChatPage extends StatelessWidget {
@@ -20,12 +21,15 @@ class ChatPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              const Text(
-                'Comencemos...',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w200,
-                  color: Colors.black,
+              FadeOut(
+                delay: const Duration(milliseconds: 3000),
+                child: const Text(
+                  'Comencemos...',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w200,
+                    color: Colors.black,
+                  ),
                 ),
               ),
               Stack(
